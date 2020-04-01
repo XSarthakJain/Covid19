@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+
+	}
+	ul li a{
+		color:white;
+	}
+</style>
+</head>
+<body>
+
+
+
+<!--Add Header-->
+<nav class="navbar navbar-expand-lg" style="background:grey;">
+  <a class="navbar-brand" href="#"><h2 style="font-weight:bolder;color:#00BFA6;font-family: 'Roboto Condensed', sans-serif;">CoronaGo</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+    
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#00BFA6;"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Find">Find</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="AboutProject">About Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ContactUs">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!--Main Body-->
+<div class="container">
+
+<center>
+<h2 style="margin:10px 10px 10px 10px; color:#00BFA6;">Search Location</h2>
+</center>
+	<form action="FindLocation" method="post">
+    {%csrf_token%}
+		<input type="text" name="Lat" id="lat1" value="" style="display:none;" ><br><br>
+		<input type="text" name="Long" id="long1" value="dhgs" style="display:none;"><br><br>
+    <input type="text" name="name" id="name" value="dhgs" style="display:none;"><br><br>
+    <center>
+    <input type="text" name="city"  placeholder="City" onclick="getLocation()" style="width:50%;height:45px;padding:10px;border-left:2px solid #DC3545;">      
+		<input type="submit" value="Submit" style="height:45px;padding:10px;background:#DC3545;border:#DC3545;color:white;"><br>
+  </center>
+
+		<center><p id="demo"></p></center>
+    <a href="/" class="btn btn-danger" style="margin-left:22%;">Back to Home</a>
+
+	</form>
+
+</div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjUHFVNTHftxO6gQ5HLYvj6hqq5PjTU_8&callback=initMap"
+  type="text/javascript"></script>
+  <script type="text/javascript">
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  console.log(position.coords.latitude);
+  document.getElementById("lat1").value=position.coords.latitude;
+  document.getElementById("long1").value=position.coords.longitude;
+  var locAPI="http://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&key="+AIzaSyBjUHFVNTHftxO6gQ5HLYvj6hqq5PjTU_8+""
+  document.getElementById("long1").value=position.coords.longitude;
+  document.getElementById("name").value=locAPI;
+  x.innerHTML=locAPI;
+}
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
