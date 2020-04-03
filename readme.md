@@ -22,7 +22,7 @@ In 2020 this Pandamic is a major problem of the entire world by this we can iden
 ##  Screenshot
 ***
 
-![Front Page](https://github.com/XSarthakJain/Covid19/assets/IndexPage.png?raw=true)
+![Front Page](../assets/FrontPeople.png?raw=true)
 ##  Contributing
 ***
 ###  any kind of contributions are welcome.
