@@ -21,17 +21,17 @@ In 2020 this Pandamic is a major problem of the entire world by this we can iden
 *  JavaScript
 ##  Screenshot
 ***
-###Front Page
+### Front Page
 ![Front Page](https://github.com/XSarthakJain/Covid19/blob/assets/IndexPage.png)
-###Find Patient nearby
+### Find Patient nearby
 ![Find Patient nearby](https://github.com/XSarthakJain/Covid19/blob/assets/FindPeople.png)
-###Nearby Patient Result
+### Nearby Patient Result
 ![Nearby Patients Result](https://github.com/XSarthakJain/Covid19/blob/assets/FindPeopleResult.png)
-###Covid 19 Live Information
+### Covid 19 Live Information
 ![Covid 19 Live Information](https://github.com/XSarthakJain/Covid19/blob/assets/NumberSuspects.png)
-###Check Patient
+### Check Patient
 ![Check Patient](https://github.com/XSarthakJain/Covid19/blob/assets/Prediction.png)
-###Patient Result
+### Patient Result
 ![Patient's Result he/she should go for testing or not](https://github.com/XSarthakJain/Covid19/blob/assets/SimtermsResult.png)
 
 ##  Contributing
