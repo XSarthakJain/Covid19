@@ -22,7 +22,13 @@ In 2020 this Pandamic is a major problem of the entire world by this we can iden
 ##  Screenshot
 ***
 
-![Front Page](https://github.com/XSarthakJain/Covid19/blob/assets/Prediction.png?raw=true)
+![Front Page](https://github.com/XSarthakJain/Covid19/blob/assets/IndexPage.png)
+![Find Patient nearby](https://github.com/XSarthakJain/Covid19/blob/assets/FindPeople.png)
+![Nearby Patients Result](https://github.com/XSarthakJain/Covid19/blob/assets/FindPeopleResult.png)
+![Covid 19 Live Information](https://github.com/XSarthakJain/Covid19/blob/assets/NumberSuspects.png)
+![Check Patient](https://github.com/XSarthakJain/Covid19/blob/assets/Prediction.png)
+![Patient's Result he/she should go for testing or not](https://github.com/XSarthakJain/Covid19/blob/assets/SimtermsResult.png)
+
 ##  Contributing
 ***
 ###  any kind of contributions are welcome.
