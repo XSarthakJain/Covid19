@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +13,8 @@
 }
 
   </style>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=278047389660432&autoLogAppEvents=1"></script>
 
 </head>
 <body>
@@ -22,9 +25,8 @@
 <nav class="navbar navbar-expand-lg" style="background:grey;
 ">
   <a class="navbar-brand" href="#"><h2 style="font-weight: bolder;color:#00BFA6;margin-top: -5px;">CoronaGo</h2></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    
-    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#00BFA6;"></i></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"style="color:white;border:2px solid white; ">
+    <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav" >
@@ -50,18 +52,21 @@
 <div class="container" style="margin-top:2%;">
 
 <div class="row">
+
   <div class="col-sm-6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.4931001177965!2d77.9586097938728!3d27.2036642275666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974778d7be4b8a3%3A0x8309c2a9a1b74cdc!2sKarkunj%20Rd%2C%20Avas%20Vikas%20Colony%2C%20Sikandra%2C%20Agra%2C%20Uttar%20Pradesh%20282007!5e0!3m2!1sen!2sin!4v1585661836003!5m2!1sen!2sin" width="550" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.4931001177965!2d77.9586097938728!3d27.2036642275666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974778d7be4b8a3%3A0x8309c2a9a1b74cdc!2sKarkunj%20Rd%2C%20Avas%20Vikas%20Colony%2C%20Sikandra%2C%20Agra%2C%20Uttar%20Pradesh%20282007!5e0!3m2!1sen!2sin!4v1585661836003!5m2!1sen!2sin" style="width:80%;height:60vh;align-content: center;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </center>
   </div>
   <div class="col-sm-6" >
     <div style="margin-left:5%;">
-    <img src="{%static 'Covid/testimonials-2.png'%}" style="width:45%;height:40vh;" title="sarthak Jain"><br>
-    <h2 style="color:#00BFA6;border-left:5px solid maroon;margin-top:5px;">Sarthak Jain</h2>
+    <img src="{%static 'Covid/testimonials-2.png'%}" style="width:140px;height:180px;" title="sarthak Jain">
+    <h2 style="color:#00BFA6;font-weight: bolder">Sarthak Jain</h2>
     <br><br>
     <p style="color:grey;font-size:15px;"> Hello Guys I am Sarthak Jain, student of MCA Second Year of Hindustan Institute of Management and Computer Studies.</p>
-    <h5 >sarthakjain31797@gmail.com</h5>
+    <h5><i class="glyphicon glyphicon-envelope" style="margin-right:5px;"></i>sarthakjain31797@gmail.com</h5>
 
-    <h5 class="glyphicon glyphicon-earphone">8938878482</h5>
+    <h4 class="glyphicon glyphicon-earphone">8938878482</h4>
     <h4><i class="fa fa-linkedin-square" style="font-size:24px;margin-right:5px;"></i><a href="https://www.linkedin.com/in/sarthak-jain-4aa28116b">LinkedIn</a>
 </h4>
     <h4><i class="fa fa-github" style="font-size:24px;margin-right:5px;"></i><a href="https://github.com/XSarthakJain">Github</a></h4>
@@ -71,6 +76,21 @@
     </div>
   </div>
 </div>
+</div>
+  
+
+<div class="container-fluid" style="margin-top:10px;padding-top:5%;padding-bottom:5%;width:100%;background-color:grey;">
+
+    <center>
+      <h1 style="color:#00bfa6;font-weight: bolder;">Comment & Like</h1>
+    <div class="fb-like" data-href="http://127.0.0.1:8000/ContactUs" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true" style="color:#00BFA6;"></div>
+
+    <br><br>
+    <div style="">
+    <div class="fb-comments" data-href="http://12.0.0.1:8000/ContactUs" data-width ="" data-numposts="5" style="color:red;border:1px solid rgb(83,83,83);">
+    </div>
+  </div>
+  </center>
 </div>
 </body>
 
