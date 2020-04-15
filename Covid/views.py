@@ -283,14 +283,14 @@ def Analysis(request):
 		# Total Cases
 
 
-		l=0
+		l=11
 		totalCase=""
 		NewCase=""
 		DeathCase=""
 		q="Total:"
 		for i in soup.findAll('td'):
 		    if(i.getText()==q):
-		        l=3
+		        l=l-1
 		        #print(i.getText())
 		     
 		    elif(l==3):
