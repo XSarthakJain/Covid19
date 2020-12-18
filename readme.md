@@ -19,6 +19,7 @@ In 2020 this Pandamic is a major problem of the entire world by this we can iden
 *  HTML
 *  CSS
 *  JavaScript
+*  Chart.JS
 ##  Screenshot
 ***
 ### Front Page
